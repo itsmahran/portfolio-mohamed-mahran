@@ -9,55 +9,68 @@ import { Sparkle } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="dark:bg-slate-950">
       <MaxWidthWrapper>
-        <div className="relative mt-12 flex flex-col-reverse min-h-screen items-center w-full xl:flex-row">
+        <div className="relative mt-12 flex flex-col-reverse min-h-screen items-center w-full xl:mt-0 xl:flex-row dark:bg-slate-900">
           <div className="flex flex-col xl:max-w-[50%]">
             <div className="flex flex-col text-center items-center xl:items-start">
-              <small className="flex gap-1 items-center mt-12 py-1 px-3 border font-medium text-slate-500 border-slate-300 w-fit rounded-full shadow-md hover:bg-slate-100 hover:cursor-default">
+              <small className="flex gap-1 text-xs items-center mt-12 py-1 px-3 border font-medium text-slate-500 border-slate-300 w-fit rounded-full shadow-md xl:mt-0 md:text-sm hover:bg-slate-100 hover:cursor-default">
                 <Sparkle size={14} className="text-yellow-500" /> Building
                 Digital Dreams with Code
               </small>
-              <h1 className="mt-6 text-slate-900 font-extrabold text-4xl sm:text-4xl lg:text-5xl tracking-tight text-center lg:leading-tight xl:text-left dark:text-white">
-                <span className="text-transparent tracking-normal font-outline-2">Hello👋</span> <br /> I'm{" "}
+              <h1 className="mt-8 text-slate-900 font-extrabold text-2xl sm:text-4xl lg:text-5xl tracking-tight text-center lg:leading-tight xl:text-left dark:text-white">
+                <span className="text-transparent tracking-normal font-outline-2">
+                  Hello👋
+                </span>{" "}
+                <br /> I'm{" "}
                 <span className="relative xl:text-left">
-                  <img src="./underline.svg" alt="underline" className="absolute -z-10 -bottom-0 -left-5 w-full" />
+                  <img
+                    src="./underline.svg"
+                    alt="underline"
+                    className="absolute -z-10 -bottom-0 -left-5 w-full"
+                  />
                   Mohamed Mahran,
                 </span>{" "}
                 <br />a Full Stack developer
               </h1>
-              <p className="mt-4 text-slate-900 text-xl text-center xl:text-left dark:text-white">
+              <p className="mt-4 text-slate-900 text-sm md:text-xl text-center xl:text-left dark:text-white">
                 With a passion for coding and 6+ years of experience, I craft
                 solutions that are as functional as they are beautiful. Let's
                 build something amazing together.
               </p>
-              <div className="flex mt-8">
-                <Button className={cn(styles.hero_cta_button)} size={"lg"}>
+              <div className="flex mt-12">
+                <Button
+                  className={cn(styles.hero_cta_button, "text-slate-800")}
+                  size={"lg"}
+                >
                   <span>
                     <FaCircleArrowRight />
                   </span>{" "}
-                  <span>Explore Works</span>
+                  <span>View My Works</span>
                 </Button>
               </div>
             </div>
-            <div className="pb-12 flex text-2xl gap-3 mt-12 justify-center xl:justify-start">
-              <Link
-                href="#"
+            <div className="pb-12 xl:pb-0 flex text-2xl gap-3 mt-12 justify-center xl:justify-start">
+              <a
+                href="https://www.linkedin.com/in/mohameddd-mahran/"
+                target="_blank"
                 className="hover:text-yellow-400 transition-colors duration-300"
               >
                 <FaLinkedin />
-              </Link>
-              <Link
-                href="#"
+              </a>
+              <a
+                href="https://github.com/itsmahran"
+                target="_blank"
                 className="hover:text-yellow-400 transition-colors duration-300"
               >
                 <FaGithub />
-              </Link>
+              </a>
             </div>
           </div>
           <div className="relative flex flex-1 justify-center items-center">
-            <div className="px-20">
+            <div className="px-5 xl:px-20">
               <Image
+                priority
                 src="/image/portrait2.jpg"
                 alt="portrait"
                 className="rounded-full grayscale hover:grayscale-0 transition-all duration-500"

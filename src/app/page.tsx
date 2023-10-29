@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaLinkedin, FaGithub, FaCircleArrowRight } from "react-icons/fa6";
 import styles from "@/app/home.module.css";
 import { cn } from "@/lib/utils";
+import { Sparkle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -13,12 +14,14 @@ export default function Home() {
         <div className="relative mt-12 flex flex-col-reverse min-h-screen items-center w-full xl:flex-row">
           <div className="flex flex-col xl:max-w-[50%]">
             <div className="flex flex-col text-center items-center xl:items-start">
-              <small className="mt-12 py-1 px-5 border font-medium text-slate-500 border-slate-300 w-fit rounded-full shadow-md hover:bg-slate-100 hover:cursor-default">
-                Building Digital Dreams with Code
+              <small className="flex gap-1 items-center mt-12 py-1 px-3 border font-medium text-slate-500 border-slate-300 w-fit rounded-full shadow-md hover:bg-slate-100 hover:cursor-default">
+                <Sparkle size={14} className="text-yellow-500" /> Building
+                Digital Dreams with Code
               </small>
               <h1 className="mt-6 text-slate-900 font-extrabold text-4xl sm:text-4xl lg:text-5xl tracking-tight text-center lg:leading-tight xl:text-left dark:text-white">
-                Hello, I'm{" "}
-                <span className="underline underline-offset-6 decoration-yellow-300 xl:text-left">
+                <span className="text-transparent tracking-normal font-outline-2">Hello👋</span> <br /> I'm{" "}
+                <span className="relative xl:text-left">
+                  <img src="./underline.svg" alt="underline" className="absolute -z-10 -bottom-0 -left-5 w-full" />
                   Mohamed Mahran,
                 </span>{" "}
                 <br />a Full Stack developer
@@ -53,7 +56,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative flex flex-1 justify-center items-center">
-            <div>
+            <div className="px-20">
               <Image
                 src="/image/portrait2.jpg"
                 alt="portrait"

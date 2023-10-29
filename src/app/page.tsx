@@ -10,20 +10,20 @@ export default function Home() {
   return (
     <main className="">
       <MaxWidthWrapper>
-        <div className="flex min-h-screen items-center w-full relative">
-          <div className="flex flex-col max-w-[50%]">
-            <div className="flex flex-col">
-              <small className="py-1 px-5 border font-medium text-slate-500 border-slate-300 w-fit rounded-full hover:bg-slate-100 hover:cursor-default">
+        <div className="relative mt-12 flex flex-col-reverse min-h-screen items-center w-full xl:flex-row">
+          <div className="flex flex-col xl:max-w-[50%]">
+            <div className="flex flex-col text-center items-center xl:items-start">
+              <small className="mt-12 py-1 px-5 border font-medium text-slate-500 border-slate-300 w-fit rounded-full shadow-md hover:bg-slate-100 hover:cursor-default">
                 Building Digital Dreams with Code
               </small>
-              <h1 className="mt-4 text-slate-900 font-extrabold text-4xl sm:text-3xl lg:text-5xl tracking-tight text-left lg:leading-tight dark:text-white">
+              <h1 className="mt-6 text-slate-900 font-extrabold text-4xl sm:text-4xl lg:text-5xl tracking-tight text-center lg:leading-tight xl:text-left dark:text-white">
                 Hello, I'm{" "}
-                <span className="underline decoration-yellow-300">
+                <span className="underline underline-offset-6 decoration-yellow-300 xl:text-left">
                   Mohamed Mahran,
                 </span>{" "}
-                <br />A Full Stack developer
+                <br />a Full Stack developer
               </h1>
-              <p className="mt-4 text-slate-900 text-xl text-left dark:text-white">
+              <p className="mt-4 text-slate-900 text-xl text-center xl:text-left dark:text-white">
                 With a passion for coding and 6+ years of experience, I craft
                 solutions that are as functional as they are beautiful. Let's
                 build something amazing together.
@@ -37,7 +37,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="flex text-2xl gap-3 mt-12">
+            <div className="pb-12 flex text-2xl gap-3 mt-12 justify-center xl:justify-start">
               <Link
                 href="#"
                 className="hover:text-yellow-400 transition-colors duration-300"

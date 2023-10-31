@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
 import MainNav from "@/components/main-nav";
 
-const inter = Inter({ subsets: ["latin"] });
+// const roboto = Noto_Sans({
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+//   style: ["normal", "italic"],
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Mohamed Mahran - Full Stack Developer",
@@ -18,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="dark:bg-[#0d1117]">
+      <body>
         <Providers>
           {/* <MainNav /> */}
           {children}

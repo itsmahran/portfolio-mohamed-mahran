@@ -1,3 +1,7 @@
 .hero_cta_button {
   @apply flex gap-3 transition-all duration-500 bg-gradient-to-r to-yellow-300 from-yellow-300  via-yellow-500 bg-size-200 bg-pos-0 hover:bg-pos-100;
 }
+
+.bg-grid{
+    background-image: url('/image/portrait2.jpg');
+}
